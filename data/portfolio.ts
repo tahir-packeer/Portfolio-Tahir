@@ -4,12 +4,14 @@ export const HERO_CONTENT = {
   subtitle: 'Building scalable distributed systems, resilient APIs, and cloud-native infrastructure. Focused on performance, observability, and developer experience.',
   ctaPrimary: 'View Featured Projects',
   ctaSecondary: 'Download Resume',
+
+  resumeUrl: '/Tahir_nasoordeen_packeer_(2).pdf',
 }
 
 export const CONTACT_INFO = {
-  email: 'tahir.nasoordeen@example.com',
-  github: 'https://github.com/tahirnp',
-  linkedin: 'https://linkedin.com/in/tahirnp',
+  email: 'tahirpackeer@gmail.com',
+  github: 'https://github.com/tahir-packeer',
+  linkedin: 'https://linkedin.com/in/tahirpackeer',
 }
 
 export const SKILLS = [
@@ -37,7 +39,7 @@ export const PROJECTS = [
     description: 'A high-throughput API gateway orchestrating 15+ microservices for a multi-tenant e-commerce platform. Handles authentication, rate limiting, request routing, and cross-service transactions with sub-50ms p99 latency.',
     techStack: ['Go', 'Kubernetes', 'gRPC', 'Redis', 'PostgreSQL', 'Envoy', 'OpenTelemetry'],
     hardPart: 'Designed a custom request coalescing layer to eliminate the "thundering herd" problem during flash sales. Implemented distributed saga pattern for cross-service order orchestration with automatic compensation transactions, reducing order failure rates from 2.3% to 0.04%.',
-    githubUrl: 'https://github.com/tahirnp/cloudretail-gateway',
+    githubUrl: 'https://github.com/tahir-packeer/cloudretail-gateway',
     liveUrl: 'https://cloudretail.example.com',
     featured: true,
   },
@@ -46,7 +48,7 @@ export const PROJECTS = [
     description: 'Real-time wildfire detection pipeline processing satellite imagery at the edge. Deployed on NVIDIA Jetson devices across fire-prone regions with offline-first architecture and satellite uplink for alerting.',
     techStack: ['Python', 'TensorRT', 'ONNX', 'MQTT', 'AWS IoT Greengrass', 'TimescaleDB', 'Grafana'],
     hardPart: 'Optimized a YOLOv8 model from 120MB to 18MB via INT8 quantization and TensorRT compilation, achieving 30 FPS inference on Jetson Orin with <2% mAP drop. Built a conflict-free replicated data type (CRDT) for offline alert synchronization across intermittent connectivity zones.',
-    githubUrl: 'https://github.com/tahirnp/edge-wildfire-detection',
+    githubUrl: 'https://github.com/tahir-packeer/edge-wildfire-detection',
     liveUrl: 'https://wildfire-detection.example.com',
     featured: true,
   },
@@ -55,7 +57,7 @@ export const PROJECTS = [
     description: 'A cron-like job scheduler with exactly-once semantics, horizontal scaling, and multi-region failover. Supports 100k+ scheduled jobs with dynamic priority queues and deadline-aware scheduling.',
     techStack: ['Go', 'etcd', 'PostgreSQL', 'Docker', 'Kubernetes', 'Prometheus'],
     hardPart: 'Implemented a lease-based leader election using etcd to ensure exactly-once execution across replicas. Built a priority inheritance protocol to prevent priority inversion in deadline-sensitive workloads. Achieved 99.99% schedule adherence under network partitions.',
-    githubUrl: 'https://github.com/tahirnp/distributed-scheduler',
+    githubUrl: 'https://github.com/tahir-packeer/distributed-scheduler',
     liveUrl: null,
     featured: false,
   },

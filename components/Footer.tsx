@@ -1,13 +1,11 @@
 'use client'
 
-import { motion, useAnimation } from 'framer-motion'
-import { Mail, Github, Linkedin, Terminal } from 'lucide-react'
+import { motion } from 'framer-motion'
+import { Terminal } from 'lucide-react'
 import { CONTACT_INFO, HERO_CONTENT } from '@/data/portfolio'
 import { cn } from '@/lib/utils'
 
 export function Footer() {
-  const controls = useAnimation()
-
   // Blinking cursor animation
   const cursorAnimation = {
     opacity: [1, 0, 1],
@@ -30,7 +28,7 @@ export function Footer() {
             <div className="space-y-3" role="list" aria-label="Contact information">
               <div className="flex items-center gap-3 text-slate-400 hover:text-sky-400 transition-colors" role="listitem">
                 <Terminal className="h-5 w-5 text-sky-400 flex-shrink-0" aria-hidden="true" />
-                <span className="font-mono text-sm text-sky-400">></span>
+                <span className="font-mono text-sm text-sky-400">{'>'}</span>
                 <span className="font-mono text-sm">connect</span>
                 <span className="font-mono text-emerald-400 text-sm">--email</span>
                 <a
@@ -44,7 +42,7 @@ export function Footer() {
 
               <div className="flex items-center gap-3 text-slate-400" role="listitem">
                 <Terminal className="h-5 w-5 text-sky-400 flex-shrink-0" aria-hidden="true" />
-                <span className="font-mono text-sm text-sky-400">></span>
+                <span className="font-mono text-sm text-sky-400">{'>'}</span>
                 <span className="font-mono text-sm">connect</span>
                 <span className="font-mono text-emerald-400 text-sm">--github</span>
                 <a
@@ -54,13 +52,13 @@ export function Footer() {
                   className="font-mono text-sm text-slate-300 hover:text-sky-400 transition-colors underline-offset-2 hover:underline"
                   aria-label="GitHub profile"
                 >
-                  github.com/tahirnp
+                  github.com/tahir-packeer
                 </a>
               </div>
 
               <div className="flex items-center gap-3 text-slate-400" role="listitem">
                 <Terminal className="h-5 w-5 text-sky-400 flex-shrink-0" aria-hidden="true" />
-                <span className="font-mono text-sm text-sky-400">></span>
+                <span className="font-mono text-sm text-sky-400">{'>'}</span>
                 <span className="font-mono text-sm">connect</span>
                 <span className="font-mono text-emerald-400 text-sm">--linkedin</span>
                 <a
@@ -70,7 +68,7 @@ export function Footer() {
                   className="font-mono text-sm text-slate-300 hover:text-sky-400 transition-colors underline-offset-2 hover:underline"
                   aria-label="LinkedIn profile"
                 >
-                  linkedin.com/in/tahirnp
+                  linkedin.com/in/tahirpackeer
                 </a>
               </div>
             </div>
@@ -112,7 +110,7 @@ export function Footer() {
                 Experience & Education
               </a>
               <a
-                href="https://github.com/tahirnp"
+                href="https://github.com/tahir-packeer"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-slate-400 hover:text-sky-400 transition-colors text-sm font-mono"

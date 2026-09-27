@@ -1,7 +1,7 @@
 import { HTMLAttributes, ReactNode } from 'react'
 import { cn } from '@/lib/utils'
 
-export interface SectionWrapperProps extends HTMLAttributes<HTMLSectionElement> {
+export interface SectionWrapperProps extends HTMLAttributes<HTMLElement> {
   id?: string
   children: ReactNode
   className?: string

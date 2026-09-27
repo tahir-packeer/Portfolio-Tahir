@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion'
 import { Github, Linkedin, Mail, ArrowRight, Download } from 'lucide-react'
-import { Button } from '@/components/ui/Button'
 import { HERO_CONTENT, CONTACT_INFO } from '@/data/portfolio'
 import { cn } from '@/lib/utils'
 
@@ -14,7 +13,7 @@ export function Hero() {
   ] as const
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section id="about" className="relative min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-sky-500/5 via-transparent to-emerald-500/5" aria-hidden="true" />
       
       <div className="relative mx-auto max-w-6xl w-full">
@@ -58,14 +57,21 @@ export function Hero() {
             transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94], delay: 0.3 }}
             className="mb-12 flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Button size="lg" onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}>
+            <a
+              href="#projects"
+              className="inline-flex items-center justify-center gap-2.5 bg-sky-500 text-slate-900 hover:bg-sky-400 active:bg-sky-600 shadow-lg shadow-sky-500/25 px-7 py-3.5 text-lg font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
+            >
               {HERO_CONTENT.ctaPrimary}
               <ArrowRight className="h-5 w-5" aria-hidden="true" />
-            </Button>
-            <Button variant="secondary" size="lg">
+            </a>
+            <a
+              href={HERO_CONTENT.resumeUrl}
+              download
+              className="inline-flex items-center justify-center gap-2.5 border-2 border-sky-400 text-sky-400 bg-transparent hover:bg-sky-400/10 active:bg-sky-400/20 px-7 py-3.5 text-lg font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
+            >
               <Download className="h-5 w-5" aria-hidden="true" />
               {HERO_CONTENT.ctaSecondary}
-            </Button>
+            </a>
           </motion.div>
 
           <motion.div
