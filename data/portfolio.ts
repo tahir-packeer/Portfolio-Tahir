@@ -4,8 +4,7 @@ export const HERO_CONTENT = {
   subtitle: 'Building scalable distributed systems, resilient APIs, and cloud-native infrastructure. Focused on performance, observability, and developer experience.',
   ctaPrimary: 'View Featured Projects',
   ctaSecondary: 'Download Resume',
-
-  resumeUrl: '/Tahir_nasoordeen_packeer_(2).pdf',
+  resumeUrl: '/public/Tahir_nasoordeen_packeer_(2).pdf',
 }
 
 export const CONTACT_INFO = {
